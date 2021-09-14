@@ -1,0 +1,225 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.foucs {
+    float: left;
+    width: 721px;
+    height: 100%;
+}
+
+.flashnews {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news_hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0px 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news_hd a {
+    float: right;
+}
+
+.news_hd a::after {
+    content: '\ea42';
+    font-family: 'IcoMoon-Free';
+    margin-left: 5px;
+}
+
+.news_bd {
+    padding: 5px 15px 0;
+}
+
+
+/* make content in one row and hidder the over part by ... */
+
+.news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.life {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+
+/* setting  ul width to make 4 li in one row, life div use overflow hidden to cut 2px oof the last li in oone row */
+
+.life ul {
+    width: 252px;
+}
+
+.life ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.life ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -14px -155px;
+}
+
+.life ul li p {
+    font-size: 8px;
+}
+
+.adver {
+    margin-top: 5px;
+}
+
+.recom {
+    height: 163px;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    width: 205px;
+    height: 163px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+
+/* add the right line oof the img and make the last one empty */
+
+.recom_bd ul li:nth-child(-n+3) ::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: orange;
+}
+
+.casual {
+    margin-top: 30px;
+}
+
+.casual_hd {
+    height: 30px;
+    border-bottom: 2px solid orange;
+}
+
+.casual_hd h3 {
+    float: left;
+    font-size: 16px;
+    color: orange;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+.casul_bd {
+    height: 360px;
+    background-color: #f9f9f9;
+}
+
+.tab_list_item>div {
+    float: left;
+}
+
+.col_210 {
+    width: 210px;
+}
+
+.col_210 ul {
+    margin-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+}
+
+.col_210>img {
+    margin-top: 20px;
+    width: 210px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_329 img {
+    width: 329px;
+    height: 360px;
+}
+
+.col_221 {
+    width: 221px;
+}
+
+.col_221 img {
+    width: 221px;
+    height: 360px;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.col_219 img {
+    width: 219px;
+    height: 360px;
+}
