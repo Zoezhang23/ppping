@@ -6,9 +6,39 @@
 }
 
 .foucs {
+    position: relative;
     float: left;
     width: 721px;
     height: 100%;
+    background-color: orange;
+}
+
+.bear {
+    position: absolute;
+    top: 60%;
+    width: 200px;
+    height: 100px;
+    background: url(../images/bear.png);
+    animation: move 1s steps(8) infinite, run 3s forwards;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+@keyframes run {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .flashnews {
