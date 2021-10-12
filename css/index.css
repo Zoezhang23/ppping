@@ -97,7 +97,7 @@
 }
 
 
-/* setting  ul width to make 4 li in one row, life div use overflow hidden to cut 2px oof the last li in oone row */
+/* setting  ul width to make 4 li in one row, life div use overflow hidden to cut 2px of the last li in oone row */
 
 .life ul {
     width: 252px;
@@ -137,6 +137,47 @@
     float: left;
     width: 205px;
     height: 163px;
+    perspective: 600px;
+}
+
+.hot_box {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    transition: all 0.6s;
+    transform-style: preserve-3d;
+}
+
+.hot_box:hover {
+    transform: rotateY(-180deg);
+}
+
+.front {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 150px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: orange;
+    background-color: peachpuff;
+    line-height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    transform: rotateY(180deg);
 }
 
 .recom_bd {

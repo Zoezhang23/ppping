@@ -1,0 +1,100 @@
+    .w {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    header {
+        height: 84px;
+        border-bottom: 2px solid orange;
+    }
+    
+    .logo {
+        padding-top: 18px;
+        /* Do not use margin,top will stick together  */
+    }
+    /* This is for this look */
+    
+    .main_look {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+        perspective: 1000px;
+        color: orange;
+    }
+    
+    .getLook {
+        position: relative;
+        width: 200px;
+        height: 300px;
+        margin: 100px auto 200px;
+        background: url(../images/look.jpg) center/cover;
+        transform-style: preserve-3d;
+        animation: move 10s linear infinite;
+    }
+    
+    .getLook:hover {
+        animation-play-state: paused;
+    }
+    
+    @keyframes move {
+        0% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+    
+    .getLook div {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s;
+    }
+    
+    .getLook div:nth-child(1) {
+        background: url(../images/look1.jpg) center/cover;
+        transform: translateZ(300px);
+    }
+    
+    .getLook div:nth-child(2) {
+        background: url(../images/look2.jpg) center/cover;
+        transform: rotateY(60deg) translateZ(300px);
+    }
+    
+    .getLook div:nth-child(3) {
+        background: url(../images/look3.jpg) center/cover;
+        transform: rotateY(120deg) translateZ(300px);
+    }
+    
+    .getLook div:nth-child(4) {
+        background: url(../images/look4.jpg) center/cover;
+        transform: rotateY(180deg) translateZ(300px);
+    }
+    
+    .getLook div:nth-child(5) {
+        background: url(../images/look5.jpg) center/cover;
+        transform: rotateY(240deg) translateZ(300px);
+    }
+    
+    .getLook div:nth-child(6) {
+        background: url(../images/look6.jpg) center/cover;
+        transform: rotateY(300deg) translateZ(300px);
+    }
+    /* This is for footer */
+    
+    .mod_copyright {
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .links a {
+        margin: 0 3px
+    }
+    
+    .copyright {
+        line-height: 20px;
+    }

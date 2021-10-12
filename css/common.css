@@ -211,15 +211,51 @@
 
 .navitems ul li {
     float: left;
+    height: 45px;
+    width: 82px;
+    line-height: 45px;
 }
 
 .navitems ul li a {
     display: block;
-    height: 45px;
-    line-height: 45px;
     font-size: 16px;
     padding: 0 25px;
+    color: #ccc;
 }
+
+.nav_box {
+    position: relative;
+    height: 45px;
+    transform-style: preserve-3d;
+    transition: all 0.4s;
+}
+
+.nav_box:hover {
+    transform: rotateX(90deg);
+}
+
+.ifront,
+.iback {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.ifront {
+    background-color: peachpuff;
+    /* better to make the front to move */
+    transform: translateZ(22.5px);
+}
+
+.iback {
+    background-color: orange;
+    /* transalte should be the first */
+    transform: translateY(22.5px) rotateX(-90deg);
+}
+
+
+/* make the navitems 3D */
 
 .footer {
     height: 415px;
