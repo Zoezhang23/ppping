@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/detail.css">
     <script src="js/detail.js"></script>
+    <script src="js/jquery.mini.js"></script>
 </head>
 
 <body>
@@ -76,8 +77,9 @@
             <a href="#">sneaker</a>
         </div>
         <!-- shopping car part -->
-        <div class="shoppingCart">MyCart
-            <i class="count">1</i>
+        <div class="shoppingCart">
+            <a href="cart.html">MyCart</a>
+            <i class="count">3</i>
         </div>
 
 
@@ -392,6 +394,103 @@
                         <img src="upload/detail_img2.jpg" alt="">
                         <img src="upload/detail_img3.jpg" alt="">
                     </div>
+                    <div class="item">
+                        <ul class="item_info">
+                            <li>1Resolution: 1920*1080(FHD)</li>
+                            <li>Rear camera: 12 million pixels</li>
+                            <li>Front camera: 5 million pixels</li>
+                            <li>Number of audits: other</li>
+                            <li>Frequency: subject to official website information</li>
+                            <li>Brand: Apple ♥Follow</li>
+                            <li>Product name: APPLE iPhone 6s Plus</li>
+                            <li>Commodity number: 1861098</li>
+                            <li>Product gross weight: 0.51kg</li>
+                            <li>Commodity Origin: Mainland China</li>
+                            <li>Hotspots: fingerprint recognition, Apple Pay, metal body, camera artifact</li>
+                            <li>System: Apple (IOS)</li>
+                            <li>Pixel: 10-16 million</li>
+                            <li>Body memory: 64GB</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="more">View More detail</a>
+                        </p>
+                        <img src="upload/detail_img1.jpg" alt="">
+                        <img src="upload/detail_img2.jpg" alt="">
+                        <img src="upload/detail_img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <ul class="item_info">
+                            <li>2Resolution: 1920*1080(FHD)</li>
+                            <li>Rear camera: 12 million pixels</li>
+                            <li>Front camera: 5 million pixels</li>
+                            <li>Number of audits: other</li>
+                            <li>Frequency: subject to official website information</li>
+                            <li>Brand: Apple ♥Follow</li>
+                            <li>Product name: APPLE iPhone 6s Plus</li>
+                            <li>Commodity number: 1861098</li>
+                            <li>Product gross weight: 0.51kg</li>
+                            <li>Commodity Origin: Mainland China</li>
+                            <li>Hotspots: fingerprint recognition, Apple Pay, metal body, camera artifact</li>
+                            <li>System: Apple (IOS)</li>
+                            <li>Pixel: 10-16 million</li>
+                            <li>Body memory: 64GB</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="more">View More detail</a>
+                        </p>
+                        <img src="upload/detail_img1.jpg" alt="">
+                        <img src="upload/detail_img2.jpg" alt="">
+                        <img src="upload/detail_img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <ul class="item_info">
+                            <li>3Resolution: 1920*1080(FHD)</li>
+                            <li>Rear camera: 12 million pixels</li>
+                            <li>Front camera: 5 million pixels</li>
+                            <li>Number of audits: other</li>
+                            <li>Frequency: subject to official website information</li>
+                            <li>Brand: Apple ♥Follow</li>
+                            <li>Product name: APPLE iPhone 6s Plus</li>
+                            <li>Commodity number: 1861098</li>
+                            <li>Product gross weight: 0.51kg</li>
+                            <li>Commodity Origin: Mainland China</li>
+                            <li>Hotspots: fingerprint recognition, Apple Pay, metal body, camera artifact</li>
+                            <li>System: Apple (IOS)</li>
+                            <li>Pixel: 10-16 million</li>
+                            <li>Body memory: 64GB</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="more">View More detail</a>
+                        </p>
+                        <img src="upload/detail_img1.jpg" alt="">
+                        <img src="upload/detail_img2.jpg" alt="">
+                        <img src="upload/detail_img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <ul class="item_info">
+                            <li>4Resolution: 1920*1080(FHD)</li>
+                            <li>Rear camera: 12 million pixels</li>
+                            <li>Front camera: 5 million pixels</li>
+                            <li>Number of audits: other</li>
+                            <li>Frequency: subject to official website information</li>
+                            <li>Brand: Apple ♥Follow</li>
+                            <li>Product name: APPLE iPhone 6s Plus</li>
+                            <li>Commodity number: 1861098</li>
+                            <li>Product gross weight: 0.51kg</li>
+                            <li>Commodity Origin: Mainland China</li>
+                            <li>Hotspots: fingerprint recognition, Apple Pay, metal body, camera artifact</li>
+                            <li>System: Apple (IOS)</li>
+                            <li>Pixel: 10-16 million</li>
+                            <li>Body memory: 64GB</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="more">View More detail</a>
+                        </p>
+                        <img src="upload/detail_img1.jpg" alt="">
+                        <img src="upload/detail_img2.jpg" alt="">
+                        <img src="upload/detail_img3.jpg" alt="">
+                    </div>
+
 
                 </div>
             </div>
@@ -533,6 +632,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(function() {
+            $('.detail_tab_list ul li').click(function() {
+                $(this).addClass('current').siblings().removeClass('current');
+                $('.detail_tab_con .item').eq($(this).index()).show().siblings().hide();
+
+            })
+        })
+    </script>
 </body>
 
 </html>

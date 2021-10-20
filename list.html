@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/list.css">
+    <script src="js/jquery.mini.js"></script>
+    <script>
+        $(function() {
+            $('.main_bd ul li').hover(function() {
+                $(this).siblings().stop().fadeTo(200, 0.4);
+            }, function() {
+                $(this).siblings().stop().fadeTo(200, 1);
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -78,8 +88,9 @@
             <a href="#">sneaker</a>
         </div>
         <!-- shopping car part -->
-        <div class="shoppingCart">MyCart
-            <i class="count">1</i>
+        <div class="shoppingCart">
+            <a href="cart.html">MyCart</a>
+            <i class="count">3</i>
         </div>
 
 

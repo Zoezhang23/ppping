@@ -377,3 +377,11 @@
     content: '\ea42';
     font-family: 'IcoMoon-Free';
 }
+
+.detail_tab_con .item {
+    display: none;
+}
+
+.detail_tab_con .item:first-child {
+    display: block;
+}
