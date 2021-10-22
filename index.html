@@ -8,6 +8,7 @@
     <title>PPPing-premium product purchasing </title>
     <meta name="decription" content="PPPing-we provide the cheapest price and the best service for all the premium products." />
     <meta name="keywords" content="blazer,boots,jewelry,shirts,shorts" />
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="ppp_favicon.ico" />
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
@@ -15,6 +16,8 @@
     <!-- this need to be in front of index.js -->
     <script src="js/animater.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/jquery.mini.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -26,8 +29,48 @@
                 <ul>
                     <li>Welcome to PPPing ! &nbsp;</li>
                     <li>
-                        <a href="#">Login</a>&nbsp;
-                        <a href="register.html" class="style_orange ">Register</a>
+                        <!-- login Button trigger modal -->
+                        <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#exampleModal">
+                            Login
+                            </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Welcome back</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-warning">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-warning btn-sm"><a href="register.html ">Register</a></button>
+
                     </li>
                 </ul>
             </div>
@@ -69,7 +112,7 @@
         <!-- search part -->
         <div class="search">
             <input type="search" name="" id="" placeholder="Blazer">
-            <button>Search</button>
+            <button class="btn btn-warning" type="submit">Submit</button>
         </div>
         <!-- hotwords parts -->
         <div class="hotwords">
@@ -97,7 +140,7 @@
                         <li><a href="look.html"> Get new look</a></li>
                         <li><a href="list.html">Clothing</a></li>
                         <li><a href="list.html">Shoes</a></li>
-                        <li><a href="list.html">Sport</a></li>
+                        <li><a href="toDoList.html">ToBuyList</a></li>
                         <li><a href="#">accessories</a></li>
                         <li><a href="#">Lingerie</a></li>
                         <li><a href="#">designer</a></li>
@@ -409,6 +452,60 @@
                 </div>
             </div>
         </div>
+        <div class="w office">
+            <div class="casual_hd">
+                <h3>Office Style</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li><a href="#" class="style_orange">Hot</a>|</li>
+                        <li><a href="#">Black</a>|</li>
+                        <li><a href="#">White</a>|</li>
+                        <li><a href="#">Blue</a>|</li>
+                        <li><a href="#">Nude</a>|</li>
+                        <li><a href="#">Green</a>|</li>
+                        <li><a href="#">Yello</a>|</li>
+                        <li><a href="#">Denim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="casul_bd">
+                <div class="tab_list_item">
+                    <div class="col_210">
+                        <ul>
+                            <li><a href="#">hot1</a></li>
+                            <li><a href="#">hot2</a></li>
+                            <li><a href="#">hot3</a></li>
+                            <li><a href="#">hot4</a></li>
+                            <li><a href="#">hot5</a></li>
+                            <li><a href="#">hot6</a></li>
+                        </ul>
+                        <img src="upload/hot1.jpg" alt="">
+                    </div>
+                    <div class="col_329">
+                        <a href="#"><img src="upload/hot2.jpg" alt=""></a>
+                    </div>
+                    <div class="col_221">
+                        <a href="#"><img src="upload/hot3.jpg" alt=""></a>
+                    </div>
+                    <div class="col_221">
+                        <a href="#"><img src="upload/hot4.jpg" alt=""></a>
+                    </div>
+                    <div class="col_219">
+                        <a href="#"><img src="upload/hot2.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fixed tool -->
+    <div class="fixedtool">
+        <ul>
+            <li class="current">Casual</li>
+            <li>Sports</li>
+            <li>Office</li>
+
+
+        </ul>
     </div>
     <!-- footer part start -->
     <footer class="footer">

@@ -41,7 +41,6 @@ window.addEventListener('load', function() {
         })
     }
     ol.children[0].className = 'current';
-
     //clone the whole first ul li.append
     var first = ul.children[1].cloneNode(true);
     ul.appendChild(first);
@@ -61,11 +60,9 @@ window.addEventListener('load', function() {
             num++;
             animater(ul, -num * focus.offsetWidth, function() {
                 flag = true;
-
             });
             //mark the circle
             circle++;
-
             if (circle == ol.children.length) {
                 circle = 0;
             }
@@ -79,7 +76,6 @@ window.addEventListener('load', function() {
     });
     //4.arrow left click
     // use flag to avoid too many click
-
     arrow_l.addEventListener('click', function() {
         // check if the. number = ul.children.length. set ul.left = 0
         // console.log(ul.children.length);
@@ -114,4 +110,40 @@ window.addEventListener('load', function() {
         //use the click function
         arrow_r.click();
     }, 2000);
+    //===================================================
+    //Using  Jquery fixed tool dispaly 
+    var control = true;
+
+    function fixTool() {
+        if ($(document).scrollTop() >= $(".recom").offset().top) {
+
+            $(".fixedtool").fadeIn();
+        } else {
+            $(".fixedtool").fadeOut();
+        }
+    }
+    fixTool();
+    $(window).scroll(function() {
+        fixTool();
+        // add current to li
+        if (control) {
+            $(".floor .w").each(function(i, ele) {
+                if ($(document).scrollTop() >= $(ele).offset().top) {
+                    $(".fixedtool li").eq(i).addClass("current").siblings().removeClass("current")
+                }
+            })
+        }
+
+    });
+    $(".fixedtool").on('click', "li", function() {
+        control = false;
+        currentP = $(".floor .w").eq($(this).index()).offset().top;
+        $(this).addClass("current").siblings().removeClass("current");
+        $("html, body").stop().animate({
+            scrollTop: currentP
+        }, function() {
+            control = true;
+        });
+
+    })
 });
