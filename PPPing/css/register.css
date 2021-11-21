@@ -1,0 +1,136 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid orange;
+}
+
+.logo {
+    padding-top: 18px;
+    /* Do not use margin,top will stick together  */
+}
+
+.reg_main {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.reg_main h3 {
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+
+.login a {
+    color: orange;
+}
+
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.reg_form ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    color: red;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+}
+
+.success {
+    color: green;
+}
+
+.success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+
+.saftey {
+    padding-left: 175px;
+}
+
+.saftey em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.weak {
+    background-color: red;
+}
+
+.middle {
+    background-color: orange;
+}
+
+.strong {
+    background-color: green;
+}
+
+.aggre {
+    padding-left: 100px;
+}
+
+.aggre input {
+    vertical-align: middle;
+}
+
+.aggre a {
+    color: red;
+}
+
+.subm {
+    width: 200px;
+    height: 34px;
+    background-color: orange;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+.mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    margin: 0 3px
+}
+
+.copyright {
+    line-height: 20px;
+}
