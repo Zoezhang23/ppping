@@ -1,2 +1,0 @@
-# ppping
-init
